@@ -11,36 +11,8 @@
 
 <div class="container-fluid filter-bg">
 	<div class="container container-filter">
-		<div class="top-categorie">
-			<span>
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/filter.png" class="img-filter">
-				Filtre
-			</span>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				 <select id="id-categorie" class="cat-prod">
-				      <option value="0">Categorie</option>
-					  <option value="1">1</option> 
-				</select> 
-			</div>
-			<div class="col-md-4">
-				 <select id="id-subcat" class="cat-prod">
-				      <option value="0">Sous-categorie</option>
-					  <option value="1">1</option> 
-				</select> 
-			</div>
-			<div class="col-md-4">
-				 <select id="id-marque" class="cat-prod">
-				      <option value="0">Marque</option>
-					  <option value="1">1</option> 
-				</select> 
-			</div>
-			<div class="btn-ctn">
-				<button class="search-cat">Rechercher</button>
-			</div>
-			
-		</div>
+		
+		<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
 		
 		<div class="row clswrap">	<!--  fiche produit -->
 			<div class="col-md-6" data-aos="fade-right" data-aos-duration="3000">
@@ -55,7 +27,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">    <!--  description technique  -->
+		<div class="row" data-aos="fade-up" data-aos-duration="1500">    <!--  description technique  -->
 			<div class="desc-tec">
 				<h3><?php echo("Description du  technique") ?></h3>
 				<table class="table table-bordered" width="100%">
@@ -82,11 +54,11 @@
 		</div>
 
 		<div class="row wrap-sim-product"> <!-- produit similaires   -->
-			<div class="similaire-product">
+			<div class="similaire-product" data-aos="fade-up" data-aos-duration="3000">
 				<h3><?php echo("produits similaires") ?></h3>
 			</div>
 		</div>
-		<div class="row row-similaire">
+		<div class="row row-similaire" data-aos="fade-up" data-aos-duration="3000">
 			<div class="col-md-3 col-piece">
 				<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product ctn-simil">
