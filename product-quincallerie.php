@@ -1,6 +1,6 @@
 <?php 
 /*
-Template name: Product mobilier du bureau
+Template name: Product Quincallerie
 */
  ?>
 
@@ -8,33 +8,33 @@ Template name: Product mobilier du bureau
 <?php get_template_part( 'templates-parts/header/site-header' ); ?>
 <div class="container-fluid bg-bur">
 		<div>
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bg-mob-bureau.png" class="img-banner-mob">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bg-cainrie.png" class="img-banner-mob">
 		</div>
 </div>
 
 <div class="container-fluid bg-gradiant">
 	<!-- start slick logo -->
 <div class="container container-filter filter-bg">
-	<div class="before-page-bureau">
+	<div class="before-page-q1">
 		 <div class="container-slick-mobilier">
 		 	<div class="car-slicker">
 		 		<div>
-	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/conforama.png" class="car-logo">
+	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/KS.png" class="car-logo">
 	            </div>
 	            <div>
-	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/habitat.png" class="car-logo">
+	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stanley.png" class="car-logo">
 	            </div>
 	            <div>
-	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/poltron.png" class="car-logo">
+	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dewalt.png" class="car-logo">
 	            </div>
 	            <div>
-	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/AMPM.png" class="car-logo">
+	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tubesca.png" class="car-logo">
 	            </div>
 	            <div>
-	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/zanotta.png" class="car-logo">
+	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/jobman.png" class="car-logo">
 	            </div>
 	            <div>
-	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/habitat.png" class="car-logo">
+	                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tubesca.png" class="car-logo">
 	            </div>
 		 	</div>
 		 </div>
@@ -48,11 +48,11 @@ Template name: Product mobilier du bureau
 				    </li>
 				    <li class="breadcrumb-item">
 				    	<a href="#">Catégorie</a></li>
-				    <li class="breadcrumb-item active" aria-current="page"> mobilier de bureau</li>
+				    <li class="breadcrumb-item active" aria-current="page"> quincaillerie générale</li>
 				  </ol>
 				</nav>
 			</div>
-			<h3>mobilier de bureau</h3>
+			<h3>quincaillerie générale</h3>
 	</div>
 	<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
 	<div class="row">
@@ -60,7 +60,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau1.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c1.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -70,7 +70,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau1.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c1.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -78,7 +78,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau2.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c2.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -88,7 +88,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau2.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c2.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -96,7 +96,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau3.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c3.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -106,63 +106,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau3.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau4.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau4.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau5.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau5.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau6.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau6.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c3.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -172,7 +116,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau4.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c4.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -182,7 +126,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau4.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c4.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -190,7 +134,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau3.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c5.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -200,7 +144,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau3.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c5.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -208,7 +152,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info8.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c5.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -218,63 +162,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info8.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau1.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau1.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau6.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau6.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau2.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau2.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c5.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -284,7 +172,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau6.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c6.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -294,7 +182,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau6.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c6.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -302,7 +190,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau1.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c7.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -312,7 +200,7 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau1.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c7.png" class="product-name">
                     </div> 
 				</a>
 		</div>
@@ -320,7 +208,7 @@ Template name: Product mobilier du bureau
 			<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau5.png" class="img-piec">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c8.png" class="img-piec">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
@@ -330,7 +218,119 @@ Template name: Product mobilier du bureau
 						</div>
 					</div>
 					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau5.png" class="product-name">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c8.png" class="product-name">
+                    </div> 
+				</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-piece">
+			<a href="<?php echo site_url('/detail-produit'); ?>">
+					<div class="content-product">
+						<div class="img-product-cat">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c2.png" class="img-piec">
+						</div>
+						<div class="desc-product">
+							<h2>Lorem ipsum</h2>
+							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
+							</p><br>
+							<span>Voir plus de détails ></span>
+						</div>
+					</div>
+					<div class="hoverlays">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c2.png" class="product-name">
+                    </div> 
+				</a>
+		</div>
+		<div class="col-md-4 col-piece">
+			<a href="<?php echo site_url('/detail-produit'); ?>">
+					<div class="content-product">
+						<div class="img-product-cat">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c5.png" class="img-piec">
+						</div>
+						<div class="desc-product">
+							<h2>Lorem ipsum</h2>
+							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
+							</p><br>
+							<span>Voir plus de détails ></span>
+						</div>
+					</div>
+					<div class="hoverlays">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c5.png" class="product-name">
+                    </div> 
+				</a>
+		</div>
+		<div class="col-md-4 col-piece">
+			<a href="<?php echo site_url('/detail-produit'); ?>">
+					<div class="content-product">
+						<div class="img-product-cat">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c3.png" class="img-piec">
+						</div>
+						<div class="desc-product">
+							<h2>Lorem ipsum</h2>
+							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
+							</p><br>
+							<span>Voir plus de détails ></span>
+						</div>
+					</div>
+					<div class="hoverlays">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c3.png" class="product-name">
+                    </div> 
+				</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-piece">
+			<a href="<?php echo site_url('/detail-produit'); ?>">
+					<div class="content-product">
+						<div class="img-product-cat">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c7.png" class="img-piec">
+						</div>
+						<div class="desc-product">
+							<h2>Lorem ipsum</h2>
+							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
+							</p><br>
+							<span>Voir plus de détails ></span>
+						</div>
+					</div>
+					<div class="hoverlays">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c7.png" class="product-name">
+                    </div> 
+				</a>
+		</div>
+		<div class="col-md-4 col-piece">
+			<a href="<?php echo site_url('/detail-produit'); ?>">
+					<div class="content-product">
+						<div class="img-product-cat">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c4.png" class="img-piec">
+						</div>
+						<div class="desc-product">
+							<h2>Lorem ipsum</h2>
+							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
+							</p><br>
+							<span>Voir plus de détails ></span>
+						</div>
+					</div>
+					<div class="hoverlays">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c4.png" class="product-name">
+                    </div> 
+				</a>
+		</div>
+		<div class="col-md-4 col-piece">
+			<a href="<?php echo site_url('/detail-produit'); ?>">
+					<div class="content-product">
+						<div class="img-product-cat">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c8.png" class="img-piec">
+						</div>
+						<div class="desc-product">
+							<h2>Lorem ipsum</h2>
+							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
+							</p><br>
+							<span>Voir plus de détails ></span>
+						</div>
+					</div>
+					<div class="hoverlays">
+                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c8.png" class="product-name">
                     </div> 
 				</a>
 		</div>

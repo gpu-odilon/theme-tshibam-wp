@@ -6,11 +6,16 @@ Template name: piece roulant
 
 <?php get_header() ?>
 <?php get_template_part( 'templates-parts/header/site-header' ); ?>
-<?php get_template_part( 'templates-parts/breadcrumb/nav-breadcrumb' ); ?>
 
-<div class="container-fluid filter-bg">
+<div class="container-fluid bg-roule">
+	<div>
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bg-detail.png" class="img-banner-mob">
+	</div>
+</div>
+
+<div class="container-fluid bg-gradiant">
 	<!-- start slick logo -->
-<div class="container container-filter">
+<div class="container container-filter filter-bg">
 	<div class="before-page-piece">
 		 <div class="container-slick-mobilier">
 		 	<div class="car-slicker">
@@ -34,6 +39,22 @@ Template name: piece roulant
 	            </div>
 		 	</div>
 		 </div>
+	</div>
+
+	<div class="container wrapper-bread">
+			<div class="breadcrumb">
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item">
+				    	<a href="<?php echo site_url(''); ?>">Accueil</a>
+				    </li>
+				    <li class="breadcrumb-item">
+				    	<a href="#">Catégorie</a></li>
+				    <li class="breadcrumb-item active" aria-current="page"> pièces de rechange pour matériel roulant</li>
+				  </ol>
+				</nav>
+			</div>
+			<h3>pièces de rechange pour matériel roulant</h3>
 	</div>
 
 	<?php get_template_part( 'templates-parts/filtre/filter' ); ?>

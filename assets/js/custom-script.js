@@ -1,5 +1,6 @@
 
- 
+// custom jquery
+
 $(document).ready(function(){
 
     // slick jquery carousel logos

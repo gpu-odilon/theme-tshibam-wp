@@ -24,6 +24,7 @@ padding: 0;
 body {
     margin: 0;
     color: #000;
+    overflow-x: hidden;
     background-color: #fff;
 }
 ul{
@@ -242,7 +243,7 @@ a:hover{
 }
 .fluid-footer{
     background-color: #f1f1f1;
-    padding: 60px;
+    padding: 120px 0 60px 0;
 }
 .footer-col h3{
     font-size: 15px;
@@ -915,15 +916,36 @@ position: absolute;
 .img-filter{
     width: 40px;
 }
+.bg-gradiant{
+    background: linear-gradient(90deg, rgba(43,174,205,1) 27%, rgba(38,97,137,1) 100%);
+}
 .filter-bg{
-background: rgb(43,174,205);
--webkit-box-shadow: -3px -14px 31px 2px #2BADCC; 
-box-shadow: -3px -14px 31px 2px #2BADCC;
-background: linear-gradient(90deg, rgba(43,174,205,1) 27%, rgba(38,97,137,1) 100%);
+    position: relative;
+}
+.filter-bg:before{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 50px;
+background: #fff;
+top: -50px;
+}
+.filter-bg:after{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 50px;
+background: #fff;
+bottom: -50px;
+box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
 }
 .container-filter{
     background: #fff;
-    padding: 30px 60px 60px 60px!important;
+    padding: 0 60px 60px 60px!important;
 }
 .cat-prod{
     font-size: 16px;
@@ -1109,10 +1131,11 @@ background: linear-gradient(90deg, rgba(43,174,205,1) 27%, rgba(38,97,137,1) 100
     display: block;
     position: absolute;
     right: -130px;
-    bottom: 40px;
-    width: 600px;
-    height: 324px;
+    bottom: 10px;
+    width: 1200px;
+    height: 421px;
     background: url(assets/images/info-absolu.png);
+    background-repeat: no-repeat;
 }
 /* +++  style commun mobilier du bureau  */
 .bg-bur{
@@ -1126,12 +1149,115 @@ background: linear-gradient(90deg, rgba(43,174,205,1) 27%, rgba(38,97,137,1) 100
     content: "";
     display: block;
     position: absolute;
-   right: -200px;
-    bottom: 10px;
-    width: 449px;
-    height: 300px;
+       right: -40%;
+    bottom: -20px;
+    width: 600px;
+    height: 401px;
     background: url(assets/images/bureau-absolu.png);
+        background-repeat: no-repeat;
 }
+.before-page-bureau:after{
+    content: "";
+    display: block;
+    position: absolute;
+   left: -35%;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: url(assets/images/mob-absolu2.png);
+    background-repeat: no-repeat;
+}
+.img-banner-mob{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.img-banner-info{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.bacgrd-info{
+    height: 350px;
+}
+.bacgrd-info{
+    background: url(assets/images/back-info.png);
+    background-repeat: no-repeat;
+}
+.wrapper-bread .breadcrumb{
+    background: none!important;
+    padding-bottom: 0!important;
+    margin-bottom: 0!important;
+}
+.wrapper-bread .breadcrumb .breadcrumb-item{
+    color: #3e3e3e!important;
+    font-family: 'roboto';
+    font-weight: 700;
+    position: relative;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.wrapper-bread .breadcrumb .breadcrumb-item a{
+    color: #0e0e0e!important;
+    font-family: 'roboto';
+    font-weight: 500;
+    position: relative;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.wrapper-bread .breadcrumb-item+.breadcrumb-item::before{
+    display: inline-block!important;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #333!important;
+    content: ">"!important;
+}
+.wrapper-bread h3{
+    font-size: 30px;
+    font-family: 'roboto';
+    font-weight: 700;
+    color: #094d76;
+    text-transform: uppercase;
+    margin: 0 0 40px 30px;
+}
+.bg-roule{
+    position: relative;
+}
+.bg-roule:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 77, 118, 0.5);
+}
+.before-page-q1{
+    position: relative;
+}
+.before-page-q1:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -35%;
+    bottom: 90px;
+    width: 800px;
+    height: 295px;
+    background: url(assets/images/absolu1.png);
+    background-repeat: no-repeat;
+}
+.before-page-q1:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -14%;
+    bottom: 60px;
+    width: 300px;
+    height: 333px;
+    background: url(assets/images/absolu2.png);
+    background-repeat: no-repeat;
+}
+
 
 
 

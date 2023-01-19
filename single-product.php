@@ -9,8 +9,8 @@
 <?php get_template_part( 'templates-parts/header/site-header' ); ?>
 <?php get_template_part( 'templates-parts/breadcrumb/nav-breadcrumb' ); ?>
 
-<div class="container-fluid filter-bg">
-	<div class="container container-filter">
+<div class="container-fluid bg-gradiant">
+	<div class="container container-filter filter-bg">
 		
 		<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
 		
@@ -54,11 +54,11 @@
 		</div>
 
 		<div class="row wrap-sim-product"> <!-- produit similaires   -->
-			<div class="similaire-product" data-aos="fade-up" data-aos-duration="3000">
+			<div class="similaire-product" data-aos="fade-left" data-aos-duration="3000">
 				<h3><?php echo("produits similaires") ?></h3>
 			</div>
 		</div>
-		<div class="row row-similaire" data-aos="fade-up" data-aos-duration="3000">
+		<div class="row row-similaire" data-aos="fade-left" data-aos-duration="3000">
 			<div class="col-md-3 col-piece">
 				<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product ctn-simil">
@@ -132,7 +132,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="row row-similaire">
+		<div class="row row-similaire" data-aos="fade-left" data-aos-duration="3000">
 			<div class="col-md-3 col-piece">
 				<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product ctn-simil">

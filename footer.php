@@ -59,7 +59,7 @@ mobilier de bureau et fourniture de bureau</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo site_url('/mobilier-du-bureau'); ?>">
+                                <a href="<?php echo site_url('/quincaillerie-generale'); ?>">
                                     Quincaillerie
                                 </a>
                             </li>

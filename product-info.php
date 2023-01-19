@@ -6,27 +6,15 @@ Template name: Product Informatique
 
 <?php get_header() ?>
 <?php get_template_part( 'templates-parts/header/site-header' ); ?>
-<div class="container-fluid bg-detail bg-infotic">
-		<div class="container" data-aos="zoom-in" data-aos-duration="3000">
-			<div class="breadcrumb">
-				<nav aria-label="breadcrumb">
-				  <ol class="breadcrumb">
-				    <li class="breadcrumb-item">
-				    	<a href="<?php echo site_url(''); ?>">Accueil</a>
-				    </li>
-				    <li class="breadcrumb-item">
-				    	<a href="#">Catégorie</a></li>
-				    <li class="breadcrumb-item active" aria-current="page"> materiels informatique</li>
-				  </ol>
-				</nav>
-			</div>
-			<h3>materiels informatique</h3>
+<div class="container-fluid">
+	<div class="bacgrd-info">
+			
 	</div>
 </div>
 
-<div class="container-fluid filter-bg">
+<div class="container-fluid bg-gradiant">
 	<!-- start slick logo -->
-<div class="container container-filter">
+<div class="container container-filter filter-bg">
 	<div class="before-page-info">
 		 <div class="container-slick-mobilier">
 		 	<div class="car-slicker">
