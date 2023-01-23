@@ -17,10 +17,10 @@ engins et auto|moto, quincaillerie générale,
 matériels informatique, téléphone mobile, 
 mobilier de bureau et fourniture de bureau</p>
                     <h3>Suivez-nous</h3>
-                   <a href="">
+                   <a href="#">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/fb.png" alt="" class="sociaux">
                    </a>
-                   <a href="">
+                   <a href="#">
                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/linkedin.png" alt="" class="sociaux">
                    </a>
                     

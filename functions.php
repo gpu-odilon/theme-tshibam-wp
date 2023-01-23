@@ -14,9 +14,8 @@ wp_register_style( 'style', get_template_directory_uri() . '/style.css', array()
 wp_enqueue_style( 'style');
 
 wp_register_style( 'responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), false );
-wp_enqueue_style( 'responsive');
 
-wp_register_style( 'mobilier', get_template_directory_uri() . '/assets/css/style-mob.css', array(), false );
+wp_register_style( 'mobilier', get_template_directory_uri() . '/assets/css/style-mob.css', array('style'), false );
 wp_enqueue_style( 'mobilier');
 
 wp_register_style( 'aos-style', get_template_directory_uri() . '/assets/css/aos.css', array(), false );

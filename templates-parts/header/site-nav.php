@@ -8,35 +8,69 @@
 <body>
     <div class="container">
       
-      <nav class="navbar">
-        <div class="navbar-container container">
-          <input type="checkbox" name="" id="">
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-
-          <ul class="menu-items">
-            
-            <li>
-                <a href="#">
-                    <?php wp_nav_menu(array( 'theme_location' => 'menu_principal'  )) ?>
-                </a>
-            </li>
-            
-          </ul>
-
-          <h1 class="logo">
-            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                <?php
+     <nav id="navigation1" class="navigation">
+        <div class="nav-header logo">
+          <a class="nav-brand" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+            <?php
                   $custom_logo_id = get_theme_mod('custom_logo');
                   $image = wp_get_attachment_image_src($custom_logo_id , 'full');
                   ?>
                 <img class="img-logo"  id="myLogo" src="<?php echo $image[0]; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-            </a>
-          </h1>
-
+          </a>
+          <div class="nav-toggle"></div>
+        </div>
+        <div class="nav-menus-wrapper">
+          <ul class="nav-menu align-to-right">
+            <li>
+              <a href="<?php echo esc_url(home_url('/')); ?>">ACCUEIL</a>
+            </li>
+            <li>
+              <a href="#">Produits</a>
+              <div class="megamenu-panel">
+                <div class="megamenu-lists">
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="<?php echo esc_url(home_url('/piece-de-rechange')); ?>">PIèCES  rechange pour matériel
+roulant </a></li>
+                    <p>Nos pièces détachées couvrent les marques de poids lourds et pour remorques les plus répandues du marché : DAF, Iveco, Man, Mercedes, Renault, Scania.
+Elles sont d'origine, homologuées et respectant les standards de qualité et sécurité.
+Elles sont d’origine, homologuées et respectant les 
+standards de qualité et de sécurité.
+</p>
+                   <div>
+                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/meganav1.png" class="nav-megaBtm">
+                   </div>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="<?php echo esc_url(home_url('/quincaillerie-generale')); ?>">Quincaillerie</a></li>
+                    <p>Groupe T-Shibam propose une gamme de panneaux solaires photovoltaïques, spécialement sélectionnés par des experts et respectant des critères d'exigence.
+Nous vous avons sélectionné uniquement du matériel fabriqué par des marques leader, fiables et proposant les meilleurs garanties du marché solaire.</p>
+                    <div>
+                      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/meganav2.png" class="nav-megaBtm">
+                    </div>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="<?php echo esc_url(home_url('/produit-informatique')); ?>">Informatique</a></li>
+                    <p>Le Groupe T-Shibam, représentant agréé, propose du matériel informatique de grande marque (HP, Asus, Dell Samsung, Fujitsu) en fonction de vos besoins spécifiques et propose également une large sélection de smartphones et tablettes.</p>
+                    <div>
+                      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/meganav3.png" class="nav-megaBtm">
+                    </div>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="<?php echo esc_url(home_url('/mobilier-du-bureau')); ?>">Mobilier de bureau</a></li>
+                    <p>Vous trouverez une large gamme de fournitures pour votre bureau à des tarifs très intéressants chez Groupe T-Shibam.</p>
+                   <div>
+                      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/meganav4.png" class="nav-megaBtm">
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="<?php echo esc_url(home_url('/a-propos')); ?>">
+                <?php echo("a propos") ?>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>

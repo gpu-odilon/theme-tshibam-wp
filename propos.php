@@ -54,7 +54,9 @@ A part la vente de pièces de rechange pour engins et poids lourd, il accompagne
                     <div>
                         <h3><?php echo("QUINCAILLERIE GÉNÉRALE") ?></h3>
                         <p>Depuis des années, nous accompagnons tous les bâtisseurs, en distribuant les plus grandes marques du bâtiment, dans le respect des normes et des réglementations.</p>
-                        <a href="">voir les produits ></a>
+                        <a href="<?php echo esc_url(home_url('/quincaillerie-generale')); ?>">voir les produits >
+                            
+                        </a>
                     </div>
                     <div class="bef_aft">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/slick-qsn.png" class="img-qsn-car">
@@ -63,7 +65,7 @@ A part la vente de pièces de rechange pour engins et poids lourd, il accompagne
                     <div>
                         <h3><?php echo("Pièces de rechange pour matériel roulant") ?></h3>
                         <p>Depuis des années, nous accompagnons tous les bâtisseurs, en distribuant les plus grandes marques du bâtiment, dans le respect des normes et des réglementations.</p>
-                        <a href="">voir les produits ></a>
+                        <a href="<?php echo esc_url(home_url('/piece-de-rechange')); ?>">voir les produits ></a>
                     </div>
                     <div class="bef_aft">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/pneu-absolu.png" class="img-qsn-car">
@@ -72,7 +74,7 @@ A part la vente de pièces de rechange pour engins et poids lourd, il accompagne
                      <div>
                         <h3><?php echo("Informatique") ?></h3>
                         <p>Depuis des années, nous accompagnons tous les bâtisseurs, en distribuant les plus grandes marques du bâtiment, dans le respect des normes et des réglementations.</p>
-                        <a href="">voir les produits ></a>
+                        <a href="<?php echo esc_url(home_url('/produit-informatique')); ?>">voir les produits ></a>
                     </div>
                     <div class="bef_aft">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info10.png" class="img-qsn-car">
@@ -81,7 +83,7 @@ A part la vente de pièces de rechange pour engins et poids lourd, il accompagne
                     <div>
                         <h3><?php echo("Quincaillerie") ?></h3>
                         <p>Depuis des années, nous accompagnons tous les bâtisseurs, en distribuant les plus grandes marques du bâtiment, dans le respect des normes et des réglementations.</p>
-                        <a href="">voir les produits ></a>
+                        <a href="<?php echo esc_url(home_url('/quincaillerie-generale')); ?>">voir les produits ></a>
                     </div>
                     <div class="bef_aft">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c2.png" class="img-qsn-car">
@@ -90,7 +92,7 @@ A part la vente de pièces de rechange pour engins et poids lourd, il accompagne
                     <div>
                         <h3><?php echo("Mobilier de bureau") ?></h3>
                         <p>Depuis des années, nous accompagnons tous les bâtisseurs, en distribuant les plus grandes marques du bâtiment, dans le respect des normes et des réglementations.</p>
-                        <a href="">voir les produits ></a>
+                        <a href="<?php echo esc_url(home_url('/mobilier-du-bureau')); ?>">voir les produits ></a>
                     </div>
                     <div class="bef_aft">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/bureau3.png" class="img-qsn-car">
