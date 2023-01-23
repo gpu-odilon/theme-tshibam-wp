@@ -6,7 +6,7 @@
     }
     header{
         padding: 0px 40px 0 0px;
-        min-height: 250px;
+        min-height: auto;
     }
     .navbar{
         opacity: 0.95;
@@ -137,4 +137,13 @@
     max-width: 100%!important;
     margin-bottom: 20px;
 	}
+    .megamenu-panel:after{
+        display: none!important;
+    }
+    .megamenu-panel:before{
+        display: none!important;
+    }
+    .navigation .nav-menus-wrapper .megamenu-panel p{
+        min-height: auto;
+    }
 }

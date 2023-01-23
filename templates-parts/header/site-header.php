@@ -6,7 +6,6 @@
 
 ?>
 
-
 <header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
 
 	<?php get_template_part( 'templates-parts/header/site-nav' ); ?>

@@ -6,9 +6,10 @@
 
 ?>
 <body>
-    <div class="container">
+    <div class="container" id="myHeader">
       
-     <nav id="navigation1" class="navigation">
+     <header>
+       <nav id="navigation1" class="navigation">
         <div class="nav-header logo">
           <a class="nav-brand" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
             <?php
@@ -73,6 +74,8 @@ Nous vous avons sélectionné uniquement du matériel fabriqué par des marques 
           </ul>
         </div>
       </nav>
+     </header>
+
     </div>
     <div class="search-wrapper">
           <div class="container">

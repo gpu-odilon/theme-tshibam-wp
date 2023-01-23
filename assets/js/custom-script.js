@@ -1,6 +1,7 @@
 
 // custom jquery
 
+
 $(document).ready(function(){
 
     // slick jquery carousel logos
@@ -33,6 +34,23 @@ $(document).ready(function(){
       infinite: true,
       autoplaySpeed: 500,
       });
+
+
+      //* sticky header scroll top nav
+      window.onscroll = function () {
+            myFunction()
+        };
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
 
     // slick tabs jquery product-list
       $('ul.tabs li').click(function(){
