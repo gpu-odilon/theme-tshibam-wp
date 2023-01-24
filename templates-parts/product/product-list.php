@@ -20,7 +20,7 @@
 				<a href="<?php echo site_url('/detail-produit'); ?>">
 					<div class="content-product">
 						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/piece1.png" class="img-piec">
+							 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/piece1.png" class="product-name">
 						</div>
 						<div class="desc-product">
 							<h2>Lorem ipsum</h2>
