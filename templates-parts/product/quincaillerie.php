@@ -1,24 +1,24 @@
 
-<?php 
-
- ?>
- <!--  Modele template page piece de rechange -->
+<!--  modele template quincaillerie -->
 <div class="container">
-   <ul class="tabs">
-      <span class="titre-onglet">
-      Pièces de rechange pour matériel roulant
-      </span>
-      <li class="tab-link current" data-tab="tab-1">Arrivage</li>
-      <li class="tab-link" data-tab="tab-2">Promotion</li>
-      <li class="tab-link" data-tab="tab-3">Voir tout</li>
-   </ul>
-   <div id="tab-1" class="tab-content current">
-      <div class="row">
-         <div class="col-piece">
+
+	<ul class="tabs-quincaillerie">
+    	<span class="titre-onglet">
+    			quincaillerie général
+    	</span>
+		<li class="tab-link current" data-tab="tab-10">Arrivage</li>
+		<li class="tab-link" data-tab="tab-11">Promotion</li>
+		<li class="tab-link" data-tab="tab-12">Voir tout</li>
+	</ul>
+
+	<div id="tab-10" class="tab-content-quincaillerie current">
+		<div class="row">
+		
+			<div class="col-piece">
             <div class="content-product">
                <div class="img-product-cat">
                   <?php
-                     $query = new WP_Query('posts_per_page=7&post_type=product&product_cat=pieces');
+                     $query = new WP_Query('posts_per_page=8&post_type=product&product_cat=quincaillerie');
                      
                       if( $query->  have_posts() )	{
                      
@@ -39,7 +39,7 @@
                                     $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
                                     ?>
                               <div class="woocommerce-product-details__short-description">
-                                 <?php echo $short_description;?>
+                                 <?php echo $short_description; // WPCS: XSS ok. ?>
                               </div>
                               </p><br>
                               <span>Voir plus de détails ></span>
@@ -49,7 +49,6 @@
 		                    </div>
                         </div>
                      </a>
-
                   </div>
                   <?php   
                      }
@@ -59,15 +58,23 @@
                        ?>
                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <div id="tab-2" class="tab-content">
-   </div>
-   <div id="tab-3" class="tab-content">
-   </div>
+         </div>		
+			
+		</div>
+	</div>
+
+	<div id="tab-11" class="tab-content-quincaillerie">
+		 <div class="row">
+			</div>
+		</div>
+	</div>
+
+	<div id="tab-12" class="tab-content-quincaillerie">
+		 <div class="row">
+			
+			
+		</div>
+	
+	</div>
+
 </div>
-
-
-
-

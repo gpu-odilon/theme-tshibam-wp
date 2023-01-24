@@ -83,6 +83,15 @@ $(document).ready(function(){
             $("#"+tab_id).addClass('current');
       });
      
+        $('ul.tabs-quincaillerie li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs-quincaillerie li').removeClass('current');
+            $('.tab-content-quincaillerie').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+      });
       
       !(function(n, i, e, a) {
     ;(n.navigation = function(t, s) {

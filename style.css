@@ -557,7 +557,7 @@ a:hover{
   bottom: 0px;
   right: 0px;
   left: 0px;
-  background-color: rgba(15, 57, 85, 0.8);
+  background-color: rgba(15, 57, 85, 0.6);
   height: 0;
   overflow: hidden;
   transition: .5s ease;
@@ -571,19 +571,19 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.col-piece:hover .hoverlays {
-cursor: pointer;
+.hoverlays img{
+    width: 100%!important;
+    padding: 15px 0 0 0;
+}
+.borderred:hover .hoverlays {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   transition: .5s ease;
   padding:0!important;
 }
-.col-piece{
-  margin: 0px auto;
-  position: relative;
-  padding-left: 0!important;
-  padding-right: 0px!important;
-  flex:0 0 31.333333%!important;
+.borderred:hover{
+  border: none!important
 }
 .slik-int:hover .overlay {
   height: 100%;
@@ -774,7 +774,7 @@ ul.tabs-info li.current{
 }
 .desc-product{
     display: inline-block;
-    padding-right: 25px;
+    padding: 0 25px 0 20px;
 }
 .desc-product p{
     font-size: 12px;
@@ -787,9 +787,19 @@ ul.tabs-info li.current{
     color: #195178;
 }
 .content-product{
-   border: solid 1px #0c4d9c;
     display: flex;
     justify-content: end;
+    align-items: center;
+}
+.content-product img{
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.borderred{
+    border: solid 1px #0c4d9c;
+    display: flex;
     align-items: center;
 }
 .product-name{
@@ -819,13 +829,14 @@ ul.tabs-info li.current{
 .desc-product h2{
     font-family: 'roboto';
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
     color: #444444;
 }
 .img-product-cat{
-    width: 100%;
-    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
 }
+
 .col-piece{
     padding: 10px 0px 10px 0px;
 }

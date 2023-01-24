@@ -56,10 +56,22 @@ add_theme_support(
     )
 );
 
+// add support themes plugins woocommerce 
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
+}
+
+add_filter('woocommerce_default_catalog_orderby', 'changer_orderby');
+function changer_orderby( $sort_by ) {
+    return 'date';
 }  
+
+add_filter( 'ws247_piew_small_gallery_limit', 'your_new_piew_small_gallery_limit');
+function your_new_piew_small_gallery_limit(){
+    $new_limit = 3;
+    return $new_limit;
+}
 
  
 

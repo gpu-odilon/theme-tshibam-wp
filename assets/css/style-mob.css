@@ -47,3 +47,54 @@ ul.tabs-mobilier li.current{
 .tab-content-mobilier.current{
     display: inherit;
 }
+
+/*   style start quincallerie tabs  */
+ul.tabs-quincaillerie{
+    margin: 0px;
+    padding: 0px 0 0px 0;
+    list-style: none;
+    text-align:right;
+}
+ul.tabs-quincaillerie li{
+    font-size: 18px;
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.tabs-quincaillerie{
+    border-bottom: solid 1px #0f3955;
+}
+ul.tabs-quincaillerie li.current{
+    color: #0c4d9c;
+}
+.tabs-quincaillerie .titre-onglet{
+    font-size: 25px;
+    position: relative;
+    color: #fff;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    font-weight: 700;
+    float: left;
+    cursor: auto;
+    padding: 0 15px;
+    background-color: #09456e;
+}
+.tabs-quincaillerie .titre-onglet:before{
+    content: "";
+    position: absolute;
+    right: -81px;
+    top: 0;
+    width: 81px;
+    height: 38px;
+    background: url('../../assets/images/iconFleche.png');
+}
+
+.tab-content-quincaillerie{
+    display: none;
+    padding: 10px 0;
+}
+.tab-content-quincaillerie.current{
+    display: inherit;
+}
