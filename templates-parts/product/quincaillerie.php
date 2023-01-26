@@ -1,6 +1,6 @@
 
 <!--  modele template quincaillerie -->
-<div class="container">
+<div class="container mobile-wrappper">
 
 	<ul class="tabs-quincaillerie">
     	<span class="titre-onglet">

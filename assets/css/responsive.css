@@ -1,12 +1,93 @@
 
-@media (max-width: 768px){
+
+
+@media screen and (max-width:991px){
+    
+    .megamenu-panel:after{
+        display: none!important;
+    }
+    .megamenu-panel:before{
+        display: none!important;
+    }
+    .navigation .nav-menus-wrapper .megamenu-panel p{
+        min-height: auto;
+    }
+        .cls1 span{
+        display: none;
+    }
+    .left-auth .nou-authen:before{
+        display: none;
+    }
+    .left-auth span{
+        font-size: 20px;
+    }
+    .left-auth p{
+        font-size: 14px;
+    }
+    .left-auth{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+    .borderred{
+        display: inline-block!important;
+    }
+    .sticky{
+        max-width: 100%!important;
+    }
+    .tabs .titre-onglet:before{
+        display: none!important;
+    }
+    .tabs-info .titre-onglet:before{
+        display: none!important;
+    }
+    .tabs-mobilier .titre-onglet:before{
+        display: none!important;
+    }
+    .tabs-quincaillerie .titre-onglet:before{
+        display: none!important;
+    }
+    .tabs .titre-onglet , .tabs-info .titre-onglet ,
+     .tabs-mobilier .titre-onglet , 
+     .tabs-quincaillerie .titre-onglet{
+        font-size: 16px!important;
+    }
+    ul.tabs li , ul.tabs-info li , 
+    ul.tabs-mobilier li , ul.tabs-quincaillerie li{
+        font-size: 14px!important;
+    }
+    .car-slicker .slick-list{
+        width: 320px;
+    }
+    .container-slicker{
+        width: 730px!important;
+    }
+    .slicker .slick-list{
+        width: 540px!important;
+    }
+}
+
+@media screen and (max-width: 767px){
     .menu-items{
         order: 1;
         display: flex;
     }
     header{
-        padding: 0px 40px 0 0px;
+        padding: 0;
         min-height: auto;
+    }
+    .wrapper h3{
+        font-size: 30px;
+    }
+    .mobile-wrappper{
+        max-width: 100%!important;
+    }
+    .search-wrapper .cat1{
+        margin:30px 0 10px 0;
+    }
+    .borderred{
+        display: flex!important;
     }
     .navbar{
         opacity: 0.95;
@@ -95,10 +176,10 @@
 
     .logo .img-logo {
     width: auto;
-    height: 55px;
+    height: 70px;
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 0;
+    left: 40px;
 }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
@@ -116,34 +197,74 @@
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
+      .container-slicker{
+        width: 600px!important;
+    }
+    .slicker .slick-list{
+        width: 480px!important;
+    }
 
+}
+
+
+@media screen and (max-width: 576px){
+    .slicker .slick-list{
+        width: 360px!important;
+    }
+    .container-slicker{
+        width: 500px!important;
+    }
+    .livraison span{
+        display: inline-block;
+    }
+    .livraison .col-livs1{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .img-liv{
+        width: 65px;
+    }
+    ul.tabs-info li{
+        padding: 0;
+    }
+    ul.tabs-mobilier li{
+        padding: 0!important;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .slicker .slick-list{
+        width: 280px!important;
+    }
+    .container-slicker{
+        width: 400px!important;
+    }
+    .slic-logos{
+        width: 50%!important;
+    }
+    .tabs .titre-onglet, .tabs-info .titre-onglet, 
+    .tabs-mobilier .titre-onglet, 
+    .tabs-quincaillerie .titre-onglet{
+        font-size: 13px!important;
+    }
+}
+@media screen and (max-width: 375px){
+    .container-slicker{
+        width: 350px!important;
+    }
 }
 
 @media screen and (max-width:1199px){
 	.col-piece{
-	max-width: 30.333333%!important;
-    margin: 0 22px 0 0;
-    flex: 0 0 33.333333%!important;
-	}
-	.col-piece{
 		display: block;
 	}
+    .container-slicker{
+        width: 1000px;
+    }
+    .slicker .slick-list{
+        width: 720px;
+    }
 }
 
-@media screen and (max-width:991px){
-	.col-piece{
-	-ms-flex: 0 0 100%!important;
-    flex: 0 0 100%!important;
-    max-width: 100%!important;
-    margin-bottom: 20px;
-	}
-    .megamenu-panel:after{
-        display: none!important;
-    }
-    .megamenu-panel:before{
-        display: none!important;
-    }
-    .navigation .nav-menus-wrapper .megamenu-panel p{
-        min-height: auto;
-    }
-}
+
+

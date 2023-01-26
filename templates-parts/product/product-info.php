@@ -1,7 +1,7 @@
  
 
 <!--  Modele template page informatique-->
-<div class="container clsinformatic">
+<div class="container clsinformatic mobile-wrappper">
 
 	<ul class="tabs-info">
     	<span class="titre-onglet">
@@ -53,7 +53,7 @@
                   <?php   
                      }
                      }
-                               wp_reset_query();
+                     wp_reset_query();
                      wp_reset_postdata();
                        ?>
                </div>

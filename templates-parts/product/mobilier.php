@@ -1,6 +1,6 @@
 
 <!--  modele template mobilier du bureau -->
-<div class="container">
+<div class="container mobile-wrappper">
 
 	<ul class="tabs-mobilier">
     	<span class="titre-onglet">

@@ -42,286 +42,53 @@ Template name: Product Informatique
 
 	<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
 	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info1.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info1.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info2.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info2.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info3.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info3.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
+		<div class="col-piece">
+            <div class="content-product">
+               <div class="img-product-cat">
+                  <?php
+                     $query = new WP_Query('posts_per_page=10&post_type=product&product_cat=informatique');
+                     
+                      if( $query->  have_posts() )	{
+                     
+                       while ( $query->have_posts() )	{
+                     
+                        	$query-> the_post();
+                       ?>	
+                  <div class="col-md-4 col-piece">
+                     <a href="<?php echo site_url('/detail-produit'); ?>">
+                        <div class="borderred">
+                           <div class="img-product-cat">
+                              <?php the_post_thumbnail(); ?>
+                           </div>
+                           <div class="desc-product">
+                              <?php the_title( '<h2 class="product_title entry-title">', '</h2>' ); ?>
+                              <p>
+                                 <?php 
+                                    $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
+                                    ?>
+                              <div class="woocommerce-product-details__short-description">
+                                 <?php echo $short_description; // WPCS: XSS ok. ?>
+                              </div>
+                              </p><br>
+                              <span>Voir plus de détails ></span>
+                           </div>
+                           <div class="hoverlays">
+		                         <?php the_post_thumbnail(); ?>
+		                    </div>
+                        </div>
+                     </a>
+                  </div>
+                  <?php   
+                     }
+                     }
+                               wp_reset_query();
+                     wp_reset_postdata();
+                       ?>
+               </div>
+            </div>
+         </div>
 	</div>
-	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info4.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info4.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info5.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info5.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info6.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info6.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info7.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info7.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info2.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info2.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info8.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info8.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info9.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info9.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info3.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info3.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info1.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info1.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info5.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info5.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info10.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info10.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-		<div class="col-md-4 col-piece">
-			<a href="<?php echo site_url('/detail-produit'); ?>">
-					<div class="content-product">
-						<div class="img-product-cat">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info6.png" class="img-piec">
-						</div>
-						<div class="desc-product">
-							<h2>Lorem ipsum</h2>
-							<p>Lorem ipsum dolod text Lorem ipsum dolod text Lorem ipsum dolod text
-							</p><br>
-							<span>Voir plus de détails ></span>
-						</div>
-					</div>
-					<div class="hoverlays">
-                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/info6.png" class="product-name">
-                    </div> 
-				</a>
-		</div>
-	</div>
-
+	
 	<!-- pagination product -->
 	<?php get_template_part( 'templates-parts/pagination/pagination-product' ); ?>
 	<?php get_template_part( 'templates-parts/snippe/snippe-our' ); ?>

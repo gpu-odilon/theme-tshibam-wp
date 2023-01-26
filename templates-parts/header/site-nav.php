@@ -6,7 +6,7 @@
 
 ?>
 <body>
-    <div class="container" id="myHeader">
+    <div class="container mobile-wrappper" id="myHeader">
       
      <header>
        <nav id="navigation1" class="navigation">
@@ -78,7 +78,7 @@ Nous vous avons sélectionné uniquement du matériel fabriqué par des marques 
 
     </div>
     <div class="search-wrapper">
-          <div class="container">
+          <div class="container mobile-wrappper">
               <div class="row cat1">
                   <div class="col-md-3 cls1">
                       <span>

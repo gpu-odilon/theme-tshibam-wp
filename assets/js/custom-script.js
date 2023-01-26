@@ -1,7 +1,6 @@
 
 // custom jquery
 
-
 $(document).ready(function(){
 
     // slick jquery carousel logos
@@ -12,6 +11,53 @@ $(document).ready(function(){
       autoplay: true,
       infinite: true,
       autoplaySpeed: 300,
+       responsive: [
+
+        {
+      breakpoint: 1240,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      }
+    },
+        {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+
       });
 
       //  slick catégorie 
@@ -20,8 +66,32 @@ $(document).ready(function(){
       dots:false,
       vertical: false,
       autoplay: true,
-      infinite: true,
+      infinite: false,
       autoplaySpeed: 300,
+       responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+
       });
 
       //  slick carousel a propos 

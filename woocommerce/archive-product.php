@@ -87,7 +87,7 @@
 <div class="container-fluid clsbanner2">
    <div class="container">
       <div class="row">
-         <div class="col-md-8">
+         <div class="col-md-8 col-xs-6 col-lg-8 col-sm-8">
             <div class="left-auth">
                <span class="nou-authen">
                <?php echo("PRODUITS AUTHENTIQUES ET DE GRANDE MARQUE") ?>
@@ -95,7 +95,7 @@
                <p>Groupe T-SHIBAM fournit exclusivement des produits authentiques des constructeurs leaders mondiaux.</p>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-4 col-xs-4 col-xs-4 col-lg-4 col-sm-4">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/banner2.png" class="banner-2">
          </div>
       </div>

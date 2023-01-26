@@ -73,5 +73,19 @@ function your_new_piew_small_gallery_limit(){
     return $new_limit;
 }
 
+add_action( 'woocommerce_single_product_summary', 'show_product_categories', 25 );
+function show_product_categories() {
+  global $product;
+  $terms = get_the_terms( $product->get_id(), 'product_cat' );
+  if( $terms ) {
+    $names = array();
+    foreach ( $terms as $term ) {
+      $names[] = $term->name;
+    }
+    print '<p>Categories: '.join( ', ', $names ).'</p>'.PHP_EOL;;
+  }
+}
+
+
  
 

@@ -3,7 +3,7 @@
 
  ?>
  <!--  Modele template page piece de rechange -->
-<div class="container">
+<div class="container mobile-wrappper">
    <ul class="tabs">
       <span class="titre-onglet">
       Pièces de rechange pour matériel roulant
@@ -27,7 +27,7 @@
                         	$query-> the_post();
                        ?>	
                   <div class="col-md-4 col-piece">
-                     <a href="<?php echo site_url('/detail-produit'); ?>">
+                     <a href="<?php the_permalink(); ?> <?php //wc_get_template_part( 'content', 'product' ); ?>">
                         <div class="borderred">
                            <div class="img-product-cat">
                               <?php the_post_thumbnail(); ?>
