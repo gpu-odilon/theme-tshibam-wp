@@ -40,23 +40,29 @@ Template name: Product Informatique
 		 </div>
 	</div>
 
-	<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
+	<div class="container">
+		<div class="row">
+			<?php echo do_shortcode( '[searchandfilter id="form1"]' ); ?>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-piece">
             <div class="content-product">
                <div class="img-product-cat">
                   <?php
-                     $query = new WP_Query('posts_per_page=10&post_type=product&product_cat=informatique');
+                    global $paged;
+							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+							$wp_query = new WP_Query();
+                     $wp_query->query('posts_per_page=4&post_type=product&product_cat=informatique'.'&paged='.$paged); 
+                     ?>
                      
-                      if( $query->  have_posts() )	{
-                     
-                       while ( $query->have_posts() )	{
-                     
-                        	$query-> the_post();
-                       ?>	
+                      <?php if ( $wp_query->have_posts() ) : ?>
+                     	 <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>	
+
+
                   <div class="col-md-4 col-piece">
-                     <a href="<?php echo site_url('/detail-produit'); ?>">
-                        <div class="borderred">
+                     <a href="<?php the_permalink(); ?>">
+                        <div class="borderred" data-aos="fade-up" data-aos-duration="1500">
                            <div class="img-product-cat">
                               <?php the_post_thumbnail(); ?>
                            </div>
@@ -78,12 +84,11 @@ Template name: Product Informatique
                         </div>
                      </a>
                   </div>
-                  <?php   
-                     }
-                     }
-                               wp_reset_query();
-                     wp_reset_postdata();
-                       ?>
+
+                  <?php endwhile; ?>
+				    	<?php wp_reset_postdata(); ?>
+						<?php endif; ?>
+
                </div>
             </div>
          </div>

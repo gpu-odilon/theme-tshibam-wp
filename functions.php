@@ -44,7 +44,6 @@ add_action('wp_enqueue_scripts', 'charger_style_script');
 //  Add support for core custom logo 
 $logo_width  = 300;
 $logo_height = 100;
-
 add_theme_support(
     'custom-logo',
     array(
@@ -73,18 +72,37 @@ function your_new_piew_small_gallery_limit(){
     return $new_limit;
 }
 
-add_action( 'woocommerce_single_product_summary', 'show_product_categories', 25 );
-function show_product_categories() {
-  global $product;
-  $terms = get_the_terms( $product->get_id(), 'product_cat' );
-  if( $terms ) {
-    $names = array();
-    foreach ( $terms as $term ) {
-      $names[] = $term->name;
-    }
-    print '<p>Categories: '.join( ', ', $names ).'</p>'.PHP_EOL;;
-  }
+//add support function php pagination product custom
+the_posts_pagination( array(
+'mid_size' => 7,
+'prev_text' => __( 'Previous Page', 'textdomain' ),
+'next_text' => __( 'Next Page', 'textdomain' ),
+) );
+
+// add support woocommerce display shurt description courte produit code promo
+function  tutsplus_excerpt_in_product_archives ()  {
+     
+    echo "<div class='descr_excerp'>".wp_trim_words (  get_the_excerpt (),  10  )."</div>";
+         
 }
+add_action (  'woocommerce_after_shop_loop_item_title' ,  'tutsplus_excerpt_in_product_archives' ,  40  );
+
+// function display read more product code promo
+add_action('woocommerce_after_shop_loop_item_title','read_more');
+function read_more() {
+    global $product;
+    if ($product){
+        $url = esc_url($product->get_permalink() );
+        echo '<a rel="nofollow" href="' .$url .'" class="read_more">Voir plus de détails ></a>';
+    }
+}
+
+
+
+
+
+            
+
 
 
  

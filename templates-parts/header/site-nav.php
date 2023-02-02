@@ -77,8 +77,10 @@ Nous vous avons sélectionné uniquement du matériel fabriqué par des marques 
      </header>
 
     </div>
+
+    <!--  search product woocommerce custom  -->
     <div class="search-wrapper">
-          <div class="container mobile-wrappper">
+          <div class="container">
               <div class="row cat1">
                   <div class="col-md-3 cls1">
                       <span>
@@ -86,18 +88,7 @@ Nous vous avons sélectionné uniquement du matériel fabriqué par des marques 
                       </span>
                   </div>
                   <div class="col-md-9 cls2">
-                       <form>
-                           <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                                <input type="text" class="  search-query form-control" placeholder="Recherche produit" />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/search-icon.png">
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                       </form>
+                       <?php aws_get_search_form( true ); ?>
                   </div>
               </div>
           </div>

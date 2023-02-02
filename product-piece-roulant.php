@@ -63,7 +63,8 @@ Template name: piece roulant
             <div class="content-product">
                <div class="img-product-cat">
                   <?php
-                     $query = new WP_Query('posts_per_page=7&post_type=product&product_cat=pieces');
+                     $query = new WP_Query('
+                     	posts_per_page=4&post_type=product&product_cat=pieces',);
                      
                       if( $query->  have_posts() )	{
                      
@@ -72,7 +73,7 @@ Template name: piece roulant
                         	$query-> the_post();
                        ?>	
                   <div class="col-md-4 col-piece">
-                     <a href="<?php echo site_url('/detail-produit'); ?>">
+                     <a href="<?php the_permalink(); ?>">
                         <div class="borderred">
                            <div class="img-product-cat">
                               <?php the_post_thumbnail(); ?>
@@ -109,6 +110,8 @@ Template name: piece roulant
 	<!-- pagination product -->
 	<?php get_template_part( 'templates-parts/pagination/pagination-product' ); ?>
 	<?php get_template_part( 'templates-parts/snippe/snippe-our' ); ?>
+
+
 
 </div>
 </div>

@@ -66,7 +66,7 @@
                     <a href="">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/produit1.png" class="img-product"> 
                         <div class="overlay">
-                            <div class="title">Mobilier<br>de bureaux</div>
+                            <div class="title">Informatique</div>
                             <span>voir tout les produits</span>
                         </div> 
                     </a>

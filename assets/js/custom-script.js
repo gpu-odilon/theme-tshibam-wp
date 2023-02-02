@@ -66,7 +66,7 @@ $(document).ready(function(){
       dots:false,
       vertical: false,
       autoplay: true,
-      infinite: false,
+      infinite: true,
       autoplaySpeed: 300,
        responsive: [
     {
@@ -102,7 +102,53 @@ $(document).ready(function(){
       vertical: false,
       autoplay: true,
       infinite: true,
-      autoplaySpeed: 500,
+      responsive: [
+
+        {
+      breakpoint: 1240,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+        {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    
+  ]
+
       });
 
 

@@ -59,18 +59,19 @@ Template name: Product mobilier du bureau
 		<div class="col-piece">
             <div class="content-product">
                <div class="img-product-cat">
-                  <?php
-                     $query = new WP_Query('posts_per_page=8&post_type=product&product_cat=mobilier');
-                     
-                      if( $query->  have_posts() )	{
-                     
-                       while ( $query->have_posts() )	{
-                     
-                        	$query-> the_post();
-                       ?>	
+                  <?php 
+                  global $paged;
+							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+							$wp_query = new WP_Query();
+							$wp_query->query('posts_per_page=3&post_type=product&product_cat=mobilier'.'&paged='.$paged); 
+							?>
+                  
+                     <?php if ( $wp_query->have_posts() ) : ?>
+                     	 <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>	
+
                   <div class="col-md-4 col-piece">
-                     <a href="<?php echo site_url('/detail-produit'); ?>">
-                        <div class="borderred">
+                     <a href="<?php the_permalink(); ?>">
+                        <div class="borderred" data-aos="fade-up" data-aos-duration="1500">
                            <div class="img-product-cat">
                               <?php the_post_thumbnail(); ?>
                            </div>
@@ -81,7 +82,7 @@ Template name: Product mobilier du bureau
                                     $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
                                     ?>
                               <div class="woocommerce-product-details__short-description">
-                                 <?php echo $short_description; // WPCS: XSS ok. ?>
+                                 <?php echo $short_description; ?>
                               </div>
                               </p><br>
                               <span>Voir plus de détails ></span>
@@ -92,12 +93,15 @@ Template name: Product mobilier du bureau
                         </div>
                      </a>
                   </div>
-                  <?php   
-                     }
-                     }
-                               wp_reset_query();
-                     wp_reset_postdata();
-                       ?>
+                  <?php endwhile; ?>
+
+					   
+
+				    <?php wp_reset_postdata(); ?>
+
+					<?php endif; ?>
+
+							
                </div>
             </div>
          </div>

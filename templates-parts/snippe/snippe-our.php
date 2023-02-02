@@ -1,6 +1,6 @@
 
 
-<div class="container cnt-liv mobile-wrappper" data-aos="fade-up" data-aos-duration="3000">
+<div class="container cnt-liv mobile-wrappper" data-aos="fade-up" data-aos-duration="1500">
     <div class="row livraison">
         <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 col-livs1">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/liv1.png" class="img-liv">

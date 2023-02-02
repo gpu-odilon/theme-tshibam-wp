@@ -5,15 +5,20 @@
 			<div class="breadcrumb">
 				<nav aria-label="breadcrumb">
 				  <ol class="breadcrumb">
-				    <li class="breadcrumb-item">
-				    	<a href="<?php echo site_url(''); ?>">Accueil</a>
+				    <li>
+				    	<?php do_action( 'woocommerce_before_main_content' );?>
 				    </li>
-				    <li class="breadcrumb-item">
-				    	<a href="#">Catégorie</a></li>
-				    <li class="breadcrumb-item active" aria-current="page">Pièces DE RECHANGE pour matériel roulant > pneumatique</li>
 				  </ol>
 				</nav>
 			</div>
-			<h3>pièces de rechange<br> pour matériel roulant</h3>
+			<h3>
+				<span class="property-type-badge">
+				    <?php   
+				        $terms = wp_get_post_terms( get_the_id(), 'product_cat' );
+				        $term  = reset($terms);
+				        echo $term->name;
+				    ?>
+				</span>
+			</h3>
 	</div>
 </div>

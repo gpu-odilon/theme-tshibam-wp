@@ -46,17 +46,26 @@
 </div>
 <div class="container product-top">
    <div class="row">
-      <div class="col-md-4 col-sm-4 slik-int">
-         <a href="">
+      <div class="col-md-3 col-sm-3 slik-int" data-aos="zoom-in" data-aos-duration="1500">
+         <a href="<?php echo site_url('/piece-de-rechange'); ?>">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/produit1.png" class="img-product"> 
             <div class="overlay">
-               <div class="title">Mobilier<br>de bureaux</div>
+               <div class="title">Matériel<br> roulant</div>
                <span>voir tout les produits</span>
             </div>
          </a>
       </div>
-      <div class="col-md-4 col-sm-4 slik-int">
-         <a href="">
+      <div class="col-md-3 col-sm-3 slik-int" data-aos="zoom-in" data-aos-duration="1500">
+         <a href="<?php echo site_url('/produit-informatique'); ?>">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/produit1.png" class="img-product"> 
+            <div class="overlay">
+               <div class="title">Informatique</div>
+               <span>voir tout les produits</span>
+            </div>
+         </a>
+      </div>
+      <div class="col-md-3 col-sm-3 slik-int" data-aos="zoom-in" data-aos-duration="3000">
+         <a href="<?php echo site_url('/mobilier-du-bureau'); ?>">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/produit2.png" class="img-product">  
             <div class="overlay">
                <div class="title">Mobilier<br>de bureaux</div>
@@ -64,11 +73,11 @@
             </div>
          </a>
       </div>
-      <div class="col-md-4 col-sm-4 slik-int">
-         <a href="">
+      <div class="col-md-3 col-sm-3 slik-int" data-aos="zoom-in" data-aos-duration="3000">
+         <a href="<?php echo site_url('/quincaillerie-generale'); ?>">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/produit3.png" class="img-product"> 
             <div class="overlay">
-               <div class="title">Mobilier<br>de bureaux</div>
+               <div class="title">Quincaillerie</div>
                <span>voir tout les produits</span>
             </div>
          </a>
@@ -87,7 +96,7 @@
 <div class="container-fluid clsbanner2">
    <div class="container">
       <div class="row">
-         <div class="col-md-8 col-xs-6 col-lg-8 col-sm-8">
+         <div class="col-md-8 col-xs-6 col-lg-8 col-sm-8" data-aos="fade-right" data-aos-duration="2000">
             <div class="left-auth">
                <span class="nou-authen">
                <?php echo("PRODUITS AUTHENTIQUES ET DE GRANDE MARQUE") ?>
@@ -95,7 +104,7 @@
                <p>Groupe T-SHIBAM fournit exclusivement des produits authentiques des constructeurs leaders mondiaux.</p>
             </div>
          </div>
-         <div class="col-md-4 col-xs-4 col-xs-4 col-lg-4 col-sm-4">
+         <div class="col-md-4 col-xs-4 col-xs-4 col-lg-4 col-sm-4" data-aos="fade-left" data-aos-duration="2000">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/banner2.png" class="banner-2">
          </div>
       </div>

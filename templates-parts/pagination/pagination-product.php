@@ -1,12 +1,13 @@
 
 <!--  modele template pagination -->
 <div class="row pagination-wrapper">
-	<div class="col-md-12">
-		<ul class="pagination">
-		  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-		  <li class="page-item"><a class="page-link" href="#">2</a></li>
-		  <li class="page-item"><a class="page-link" href="#">3</a></li>
-		  <li class="page-item"><a class="page-link" href="#">Suiv</a></li>
-		</ul>
-	</div>
+		<div class="col-md-12">
+			<nav data-aos="fade-up" data-aos-duration="1500">
+				<ul class="pagination">
+				  <!-- <li class="page-item active"><?php //previous_posts_link( '&laquo; Prev', $loop->max_num_pages) ?></li> -->
+				  <li class="page-item active"><?php the_posts_pagination( '&laquo; Prev', $loop->max_num_pages) ?></li>
+				  <!-- <li class="page-item"><?php //next_posts_link( 'Suiv &raquo;', $loop->max_num_pages) ?></li> -->
+				</ul>
+			</nav>
+		</div>
 </div>
