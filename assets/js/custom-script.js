@@ -787,4 +787,24 @@ $(document).ready(function(){
 
 });
 
+$(function(){
+
+  $("#exzoom").exzoom({
+
+    // thumbnail nav options
+    "navWidth": 30,
+    "navHeight": 30,
+    "navItemNum": 5,
+    "navItemMargin": 7,
+    "navBorder": 1,
+
+    // autoplay
+    "autoPlay": true,
+
+    // autoplay interval in milliseconds
+    "autoPlayTimeout": 100
+    
+  });
+
+});
 

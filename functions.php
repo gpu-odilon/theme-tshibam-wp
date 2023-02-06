@@ -27,6 +27,8 @@ wp_enqueue_style( 'script-aos');
 
 wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/custom-script.js', array('jquery-slick'), false );
 
+wp_enqueue_script( 'jquery-zomm', get_template_directory_uri() . '/assets/js/jquery.exzoom.js', array(), false );
+
 wp_register_style( 'style-bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css', array(), false );
 wp_enqueue_style( 'style-bootstrap');
 
@@ -35,11 +37,17 @@ wp_enqueue_style( 'script-bootstrap');
 
 wp_enqueue_style( 'style-slick', get_template_directory_uri() . '/assets/css/slick.css', array(), false );
 
+wp_enqueue_style( 'zoom-css', get_template_directory_uri() . '/assets/css/jquery.exzoom.css', array(), false );
+
 wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery-slick'), false );
 
 wp_enqueue_script('jquery-slick','https://code.jquery.com/jquery-3.6.1.js',array(),'6.0.3',false);
+
 }
+
 add_action('wp_enqueue_scripts', 'charger_style_script');
+
+
 
 //  Add support for core custom logo 
 $logo_width  = 300;
@@ -96,32 +104,3 @@ function read_more() {
         echo '<a rel="nofollow" href="' .$url .'" class="read_more">Voir plus de détails ></a>';
     }
 }
-
-// Add support theme Widgets dans la bande latérale
-register_sidebar(array(
-    'id' => 'articles',
-    'name' => 'Sidebar 1'
-));
-
-// Widgets dans le pied de page
-register_sidebar(array(
-    'id' => 'pied1',
-    'name' => 'Pied de page 1'
-));
-
-register_sidebar(array(
-    'id' => 'pied2',
-    'name' => 'Pied de page 2'
-));
-
-
-
-
-
-
-            
-
-
-
- 
-

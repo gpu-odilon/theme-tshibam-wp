@@ -1206,7 +1206,7 @@ box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
     transition: .3s ease-in-out;
 }
 .img-fic img:hover{
-    cursor: pointer;
+    cursor: crosshair;
    -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1);
 }

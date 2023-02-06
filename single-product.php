@@ -15,9 +15,13 @@
 		<div class="det-single">Détail du produit > <?php the_title( '<span class="product_title entry-title">', '</span>' ); ?></div>
 		<div class="row clswrap">	<!--  fiche produit -->
 			<div class="col-md-6">
-				<span class="img-fic">
-					<?php the_post_thumbnail(); ?>
-				</span>
+				<div class="exzoom hidden" id="exzoom">
+				    <div class="exzoom_img_box">
+				        <ul class='exzoom_img_ul'>
+				            <li><?php the_post_thumbnail(); ?></li> 
+				        </ul>
+				    </div>   
+				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="contenu-produits">
@@ -78,7 +82,7 @@
 		</div>
 
 		<div class="row wrap-sim-product"> <!-- produit similaires   -->
-			<div class="similaire-product" data-aos="fade-left" data-aos-duration="1500">
+			<div class="similaire-product">
 				<h3><?php echo("produits similaires") ?></h3>
 			</div>
 		</div>
@@ -98,7 +102,7 @@
                        ?>	
                   <div class="col-md-3 col-piece">
                      <a href="<?php the_permalink(); ?> <?php //wc_get_template_part( 'content', 'product' ); ?>">
-                        <div class="borderred">
+                        <div class="borderred" data-aos="fade-up" data-aos-duration="1500">
                            <div class="img-product-cat">
                               <?php the_post_thumbnail(); ?>
                            </div>

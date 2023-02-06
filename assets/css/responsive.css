@@ -85,6 +85,9 @@
   .nav-megaBtm {
     width: 40%
   }
+  .exzoom .exzoom_img_ul_outer{
+    left: 30%!important;
+  }
 }
 
 @media screen and (max-width:767px) {
