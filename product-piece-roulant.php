@@ -57,63 +57,34 @@ Template name: piece roulant
 			<h3>pièces de rechange pour matériel roulant</h3>
 	</div>
 
-	<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
-	<div class="row">
-		<div class="col-piece">
-            <div class="content-product">
-               <div class="img-product-cat">
-                  <?php
-                     $query = new WP_Query('
-                     	posts_per_page=4&post_type=product&product_cat=pieces',);
-                     
-                      if( $query->  have_posts() )	{
-                     
-                       while ( $query->have_posts() )	{
-                     
-                        	$query-> the_post();
-                       ?>	
-                  <div class="col-md-4 col-piece">
-                     <a href="<?php the_permalink(); ?>">
-                        <div class="borderred">
-                           <div class="img-product-cat">
-                              <?php the_post_thumbnail(); ?>
-                           </div>
-                           <div class="desc-product">
-                              <?php the_title( '<h2 class="product_title entry-title">', '</h2>' ); ?>
-                              <p>
-                                 <?php 
-                                    $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
-                                    ?>
-                              <div class="woocommerce-product-details__short-description">
-                                 <?php echo $short_description;?>
-                              </div>
-                              </p><br>
-                              <span>Voir plus de détails ></span>
-                           </div>
-                           <div class="hoverlays">
-		                         <?php the_post_thumbnail(); ?>
-		                    </div>
-                        </div>
-                     </a>
-
-                  </div>
-                  <?php   
-                     }
-                     }
-                               wp_reset_query();
-                     wp_reset_postdata();
-                       ?>
-               </div>
-            </div>
-         </div>
+	<div class="container container-filter" data-aos="fade-up" data-aos-duration="1500">
+		<div class="top-categorie">
+			<span>
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/filter.png" class="img-filter">
+				Filtre
+			</span>
+		</div>
+		<div class="row filter_show">
+			<div class="col-md-4">
+				 <?php echo do_shortcode('[searchandfilter id="test"]') ?>
+			</div>
+			<div class="col-md-4">
+				 <?php echo do_shortcode('[searchandfilter id="form_test"]') ?>
+			</div>
+		</div>
 	</div>
+	
+	<div class="col-piece" data-aos="fade-up" data-aos-duration="2000">
+        <?php echo do_shortcode('[products limit= "6" columns= "3" short_description="show" order="DESC" category="pieces" ]') ?> 
+   </div>
+
 	<!-- pagination product -->
 	<?php get_template_part( 'templates-parts/pagination/pagination-product' ); ?>
 	<?php get_template_part( 'templates-parts/snippe/snippe-our' ); ?>
 
 
 
-</div>
+
 </div>
 
  <?php get_footer() ?>

@@ -1,7 +1,7 @@
 
 <!--   breadcrumb themes product  -->
 <div class="container-fluid bg-detail">
-		<div class="container" data-aos="zoom-in" data-aos-duration="3000">
+		<div class="container" data-aos="fade-up" data-aos-duration="3000">
 			<div class="breadcrumb">
 				<nav aria-label="breadcrumb">
 				  <ol class="breadcrumb">

@@ -46,7 +46,7 @@
 </div>
 <div class="container product-top">
    <div class="row">
-      <div class="col-md-3 col-sm-3 slik-int" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="col-md-3 col-sm-3 slik-int" data-aos="fade-up" data-aos-duration="1500">
          <a href="<?php echo site_url('/piece-de-rechange'); ?>">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/produit1.png" class="img-product"> 
             <div class="overlay">

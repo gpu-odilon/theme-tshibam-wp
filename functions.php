@@ -97,6 +97,24 @@ function read_more() {
     }
 }
 
+// Add support theme Widgets dans la bande latérale
+register_sidebar(array(
+    'id' => 'articles',
+    'name' => 'Sidebar 1'
+));
+
+// Widgets dans le pied de page
+register_sidebar(array(
+    'id' => 'pied1',
+    'name' => 'Pied de page 1'
+));
+
+register_sidebar(array(
+    'id' => 'pied2',
+    'name' => 'Pied de page 2'
+));
+
+
 
 
 

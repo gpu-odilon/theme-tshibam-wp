@@ -102,6 +102,7 @@ $(document).ready(function(){
       vertical: false,
       autoplay: true,
       infinite: true,
+      autoplaySpeed: 500,
       responsive: [
 
         {

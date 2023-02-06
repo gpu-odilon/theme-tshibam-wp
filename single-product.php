@@ -11,8 +11,8 @@
 <div class="container-fluid bg-gradiant">
 	<div class="container container-filter filter-bg mobile-wrappper">
 		
-		<?php get_template_part( 'templates-parts/filtre/filter' ); ?>
-		
+		<?php //get_template_part( 'templates-parts/filtre/filter' ); ?>
+		<div class="det-single">Détail du produit > <?php the_title( '<span class="product_title entry-title">', '</span>' ); ?></div>
 		<div class="row clswrap">	<!--  fiche produit -->
 			<div class="col-md-6">
 				<span class="img-fic">

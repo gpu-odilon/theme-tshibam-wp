@@ -20,6 +20,7 @@ h4,
 h6{
 margin: 0;
 padding: 0;
+font-size: 24px;
 }
 body {
     margin: 0;
@@ -145,6 +146,9 @@ a:hover{
 }
 .aws-search-result .aws_result_image img{
     width: 80px;
+}
+.aws_result_sale , .aws-search-result .aws_result_price{
+    display: none!important;
 }
 .navbar-container{
     display: flex;
@@ -513,7 +517,7 @@ a:hover{
 .car-slicker .slick-next{
     position: absolute;
     right: 0;
-    bottom: 34px;
+    bottom: 25px;
     background: transparent;
     color: transparent;
     border: none;
@@ -525,7 +529,7 @@ a:hover{
     display: block;
     position: absolute;
     right: 40px;
-    bottom: -9px;
+    bottom: 0;
     width: 30px;
     height: 30px;
     background: url('assets/images/slick-next');
@@ -533,7 +537,7 @@ a:hover{
 .car-slicker .slick-prev{
     position: absolute;
     left: 0;
-    bottom: 34px;
+    bottom: 25px;
     background: transparent;
     color: transparent;
     border: none;
@@ -545,14 +549,14 @@ a:hover{
     display: block;
     position: absolute;
     left: 40px;
-    bottom: -9px;
+    bottom: 0;
     width: 30px;
     height: 30px;
     background: url('assets/images/slick-prev');
 }
 .car-logo{
     width: 100%!important;
-    height: 50px;
+    height: 50px!important;
     object-fit: contain;
 }
 .before-page-piece{
@@ -646,7 +650,7 @@ a:hover{
 }
 .title {
   color: white;
-  font-size: 32px;
+  font-size: 20px;
   font-family: 'roboto';
   text-transform: uppercase;
   font-weight: 700;
@@ -810,7 +814,7 @@ ul.tabs-info li.current{
     display: inherit;
 }
 .clsinformatic{
-    margin: 50px 0 50px 0;
+    margin: 0 0 0px 0;
 }
 .tab-content{
     display: none;
@@ -913,8 +917,11 @@ ul.tabs-info li.current{
     display: flex;
     align-items: center;
 }
+.col-piece .woocommerce span.onsale{
+    background-color: #7aaae4;
+}
 .col-piece .woocommerce ul.products li.product .onsale{
-    left: 0;
+    left: -15px;
     right: auto;
     z-index: 0;
 }
@@ -946,8 +953,34 @@ ul.tabs-info li.current{
     background: rgba(9, 69, 110, 0.7);
     transform-origin: center;
 }
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{
+    background: #094d76;
+    color: #fff;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 16px;
+        padding: 10px 15px;
+}
+.woocommerce nav.woocommerce-pagination ul li{
+    background: #fff;
+    border: solid 1px #094d76;
+    margin: 0 15px 0 0;
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.woocommerce nav.woocommerce-pagination ul li a{
+    color: #094d76;
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 500;
+        padding: 10px 15px;
+}
 .wc-product-table th, .wc-product-table td {
     text-align: right;
+}
+.woocommerce nav.woocommerce-pagination ul{
+    border: none;
 }
 .woocommerce-LoopProduct-link{
  width: 100%;
@@ -1022,6 +1055,14 @@ position: absolute;
     padding: 60px 0 60px 0;
     background: url(assets/images/bg-detail.png);
 }
+.det-single{
+    font-size: 20px;
+    color: #094d76;
+    font-family: 'montserrat';
+    font-weight: 600;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
 .bg-detail:before{
     content: "";
     position: absolute;
@@ -1082,6 +1123,17 @@ position: absolute;
 }
 .filter-bg{
     position: relative;
+}
+.filter_show .select2-container--default .select2-selection--single{
+        font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 500;
+    text-transform: none!important;
+    box-shadow: -1px 6px 5px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: -1px 6px 5px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    outline: none;
 }
 .filter-bg:before{
 content: "";
@@ -1359,7 +1411,7 @@ box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
 }
 .img-banner-mob{
     width: 100%;
-    height: 350px;
+    height: 350px!important;
     object-fit: cover;
 }
 .img-banner-info{
