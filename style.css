@@ -2859,17 +2859,17 @@ div.scrolling-inverse{
 }
 div.inverse{
   position: relative;
-  -webkit-animation: inverses 9s infinite linear;;
-  -moz-animation: inverses 9s infinite linear;
-  -o-animation: inverses 9s infinite linear;
-  animation: inverses 9s infinite linear;
+  -webkit-animation: inverses 8s infinite linear;;
+  -moz-animation: inverses 8s infinite linear;
+  -o-animation: inverses 8s infinite linear;
+  animation: inverses 8s infinite linear;
 }
 @keyframes inverses{
-    0%   {left: 700px;}
+    0%   {left: 600px;}
     100% {left: -950px;}
 }
 @-webkit-keyframes inverses{
-    0%   {left: 700px;}
+    0%   {left: 600px;}
     100% {left: -950px;}
 }
 
