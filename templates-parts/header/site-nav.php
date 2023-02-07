@@ -79,20 +79,8 @@ Nous vous avons sélectionné uniquement du matériel fabriqué par des marques 
     </div>
 
     <!--  search product woocommerce custom  -->
-    <div class="search-wrapper">
-          <div class="container">
-              <div class="row cat1">
-                  <div class="col-md-3 cls1">
-                      <span>
-                          <?php echo "CATEGORIES"; ?>
-                      </span>
-                  </div>
-                  <div class="col-md-9 cls2">
-                       <?php aws_get_search_form( true ); ?>
-                  </div>
-              </div>
-          </div>
-    </div>
+    <?php get_template_part( 'templates-parts/header/nav-dropdown' ); ?>
+    
 </body>
 
     

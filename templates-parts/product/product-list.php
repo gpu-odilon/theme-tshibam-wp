@@ -18,6 +18,8 @@
          <?php echo('Voir tout') ?>
       </li>
    </ul>
+
+   
    <div id="tab-1" class="tab-content current">
          <div class="col-piece" data-aos="fade-up" data-aos-duration="1500">
             <?php echo do_shortcode('[products limit= "6" columns= "3" short_description="show" order="DESC" category="pieces" ]') ?>

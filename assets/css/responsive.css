@@ -365,6 +365,9 @@
     height: 260px;
     object-fit: contain;
   }
+  .exzoom_img_box .exzoom_img_ul li img{
+    margin-top: 0!important;
+  }
 }
 
 @media screen and (max-width:480px) {

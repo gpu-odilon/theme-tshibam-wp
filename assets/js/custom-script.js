@@ -3,6 +3,21 @@
 
 $(document).ready(function(){
 
+    // click button catégorie
+     $(".start").click(function(){
+        $("#menu").slideToggle("slow");
+        $('.icon-one').toggleClass('active-one');
+        $('.icon-one').click(function() {
+          
+        });
+           $(".menu-item").mouseover(function(){
+              $(this).children('.sub-menu').css('display' , 'block');
+            });
+           $(".menu-item").mouseout(function(){
+              $(this).children('.sub-menu').css('display' , 'none');
+            });
+    });
+
     // slick jquery carousel logos
       $('.carousel').slick({
       slidesToShow: 7,
@@ -805,6 +820,8 @@ $(function(){
     "autoPlayTimeout": 100
     
   });
+
+
 
 });
 

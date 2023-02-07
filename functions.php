@@ -101,6 +101,14 @@ function read_more() {
     global $product;
     if ($product){
         $url = esc_url($product->get_permalink() );
-        echo '<a rel="nofollow" href="' .$url .'" class="read_more">Voir plus de détails ></a>';
+        echo '<a rel="nofollow" href="' .$url .'" class="read_more modal-toggle">Voir plus de détails ></a>'
+        ;
     }
 }
+
+ function print_menu_shortcode($atts, $content = null) {
+extract(shortcode_atts(array( 'name' => null, 'class' => null ), $atts));
+return wp_nav_menu( array( 'menu' => $name, 'menu_class' => $class, 'echo' => false ) );
+}
+
+add_shortcode('menu', 'print_menu_shortcode');

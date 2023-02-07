@@ -6,8 +6,17 @@
 </header>
 <div class="container-fluid wrapper">
    <div class="container" data-aos="zoom-in" data-aos-duration="3000">
-      <h3><?php echo("Ventes des pièces de rechange") ?></h3>
-      <span>pour matériel roulant</span>
+      <div class="scrolling-limit">
+        <div class="scrolling">
+         <h3><?php echo("Ventes des pièces de rechange") ?></h3>
+        </div>
+      </div>
+      <div class="scrolling-inverse">
+        <div class="inverse">
+         <span>pour matériel roulant</span>
+        </div>
+      </div>
+      
    </div>
    <!--   start carouseul images logos  -->
    <div>

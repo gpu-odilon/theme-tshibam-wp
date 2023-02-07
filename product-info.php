@@ -54,6 +54,9 @@ Template name: Product Informatique
 			<div class="col-md-4">
 				 <?php echo do_shortcode('[searchandfilter id="form_test"]') ?>
 			</div>
+			<div class="col-md-4">
+				<?php echo do_shortcode('[searchandfilter id="attribut_select"]'); ?>
+			</div>
 		</div>
 	</div>
 	
