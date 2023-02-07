@@ -1,5 +1,5 @@
 <div class="search-wrapper">
-      <div class="container">
+      <div class="container mobile-wrappper">
           <div class="row cat1">
 	            <div class="col-md-3 cls1">
 	              		<div>
