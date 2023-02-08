@@ -74,7 +74,7 @@ Template name: Product mobilier du bureau
 			
 		</div>
 	</div>
-	<div class="col-piece" data-aos="fade-up" data-aos-duration="3000">
+	<div class="col-piece" data-aos="fade-up" data-aos-duration="1500">
         <?php echo do_shortcode('[products limit= "6" columns= "3" short_description="show" order="DESC" category="mobilier" ]') ?> 
    </div>
 
