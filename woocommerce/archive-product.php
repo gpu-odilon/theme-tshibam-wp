@@ -8,7 +8,7 @@
    <div class="container" data-aos="zoom-in" data-aos-duration="3000">
       <div class="scrolling-limit">
         <div class="scrolling">
-         <h3><?php echo("Ventes des pièces de rechange") ?></h3>
+            <h3><?php echo("Ventes des pièces de rechange") ?></h3>
         </div>
       </div>
       <div class="scrolling-inverse">

@@ -1260,7 +1260,7 @@ position: absolute;
     width: 40px;
 }
 .bg-gradiant{
-    background: linear-gradient(90deg, rgba(43,174,205,1) 27%, rgba(38,97,137,1) 100%);
+    background: linear-gradient(90deg, rgba(40,80,140,1) 27%, rgba(38,97,137,1) 100%);
 }
 .filter-bg{
     position: relative;
