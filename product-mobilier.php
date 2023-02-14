@@ -62,14 +62,15 @@ Template name: Product mobilier du bureau
 			</span>
 		</div>
 		<div class="row filter_show">
+			
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="test"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="filtre_categorie_mobilier_de_bureau"]') ?>
 			</div>
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="form_test"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="sous_categorie_mobilier"]') ?>
 			</div>
 			<div class="col-md-4">
-				<?php echo do_shortcode('[searchandfilter id="attribut_select"]'); ?>
+				<?php echo do_shortcode('[searchandfilter id="marque_filtre_produit_mobilier"]'); ?>
 			</div>
 			
 		</div>

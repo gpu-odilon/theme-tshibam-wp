@@ -21,12 +21,12 @@
           <div class="nav-toggle"></div>
         </div>
         <div class="nav-menus-wrapper">
-          <ul class="nav-menu align-to-right">
-            <li>
-              <a href="<?php echo esc_url(home_url('/')); ?>">ACCUEIL</a>
+          <ul class="nav-menu nav align-to-right">
+            <li class="nav__item">
+              <a class="nav__link" id="links" href="<?php echo esc_url(home_url('/')); ?>">ACCUEIL</a>
             </li>
-            <li>
-              <a href="#">Produits</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Produits</a>
               <div class="megamenu-panel">
                 <div class="megamenu-lists">
                   <ul class="megamenu-list list-col-4">
@@ -66,8 +66,8 @@ Nous vous avons sélectionné uniquement du matériel fabriqué par des marques 
                 </div>
               </div>
             </li>
-            <li>
-              <a href="<?php echo esc_url(home_url('/a-propos')); ?>">
+            <li class="nav__item">
+              <a class="nav__link" href="<?php echo esc_url(home_url('/a-propos')); ?>">
                 <?php echo("a propos") ?>
               </a>
             </li>

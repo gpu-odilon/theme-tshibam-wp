@@ -12,6 +12,7 @@
 	              			<div id="menu">
 													<?php wp_nav_menu(array( 'theme_location' => 'menu_principal' )) ?>
 											</div>
+											
 	              		</div>
 	                  <span>
 	                      <?php echo "CATEGORIES"; ?>

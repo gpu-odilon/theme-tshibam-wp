@@ -755,7 +755,7 @@ a:hover{
   bottom: 0px;
   right: 0px;
   left: 0px;
-  background-color: rgba(15, 57, 85, 0.4);
+  background: #fff;
   height: 0;
   overflow: hidden;
   transition: .5s ease;
@@ -989,7 +989,6 @@ ul.tabs-info li.current{
     color: #195178;
 }
 .content-product{
-    display: flex;
     justify-content: end;
     align-items: center;
 }
@@ -1001,7 +1000,7 @@ ul.tabs-info li.current{
     padding-right: 20px;
 }
 .borderred{
-    border: solid 1px #0c4d9c;
+    border: solid 1px #0f3955;
     display: flex;
     align-items: center;
 }
@@ -1062,6 +1061,9 @@ ul.tabs-info li.current{
     display: flex;
     align-items: center;
 }
+.col-piece .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+     border: solid 1px #0c4d9c;
+}
 .col-piece .woocommerce span.onsale{
     background-color: #1e2f56;
 }
@@ -1090,14 +1092,13 @@ ul.tabs-info li.current{
 
 .col-piece .woocommerce ul.products li.product a img:hover{
     transition: .5s ease;
-    -ms-transform: scale(2) translate(32px); /* IE 9 */
-    -webkit-transform: scale(2) translate(32px); /* Safari 3-8 */
-    transform: scale(2) translate(32px);
+    scale: 1.2;
     z-index: 999;
     position: relative;
     background: #fff;
-    border: solid 1px #094d76;
     transform-origin: center;
+    width: 100%;
+    margin-right: 0;
 }
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{
     background: #094d76;
@@ -1551,6 +1552,22 @@ box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
     position: absolute;
     right: -130px;
     bottom: 10px;
+    width: 1200px;
+    height: 421px;
+    background: url(assets/images/info-absolu.png);
+    background-repeat: no-repeat;
+}
+.before-cat{
+    position: relative!important;
+}
+.before-cat:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    left: 0;
+    margin: 0 auto;
     width: 1200px;
     height: 421px;
     background: url(assets/images/info-absolu.png);
@@ -2034,10 +2051,21 @@ box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
   padding: 12px 15px 12px 26px;
 }
 
-.nav-menu > li:hover > a,
-.nav-menu > li.active > a,
-.nav-menu > li.focus > a {
-  color: #09517a;
+.nav-menu li a.active{
+    color: red;
+}
+.navbar-inverse.menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background:transparent;
+}
+.navbar-inverse.menu ul li a:hover, .navbar-inverse.menu ul li a.active, .navbar-inverse.menu ul li a.active:hover {
+
+    background: rgba(183, 51, 106, 0.38);
+}
+.navbar-inverse {
+    border-radius: 0;
 }
 
 .nav-menu > li > a > i,
@@ -2699,7 +2727,6 @@ box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
 .megamenu-tabs-pane.active {
   display: block;
 }
-
 .navigation-portrait .megamenu-tabs-pane {
   width: 100%;
 }
@@ -2788,7 +2815,9 @@ box-shadow: -1px 16px 13px -8px rgba(0,0,0,0.75);
   font-weight: 500;
   text-transform: uppercase;
 }
-
+.nav-menu > li > a.active{
+    color: red;
+}
 .nav-dropdown > li > a {
   color: #343a40;
   padding: 10px 20px;

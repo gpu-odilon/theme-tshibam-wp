@@ -64,13 +64,13 @@ Template name: Product Quincallerie
 		</div>
 		<div class="row filter_show">
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="test"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="filtre_categorie_quincaillerie"]') ?>
 			</div>
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="form_test"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="sous_categorie_caincaillerie"]') ?>
 			</div>
 			<div class="col-md-4">
-				<?php echo do_shortcode('[searchandfilter id="attribut_select"]'); ?>
+				<?php echo do_shortcode('[searchandfilter id="marque_produit_quincaillerie"]'); ?>
 			</div>
 			
 		</div>

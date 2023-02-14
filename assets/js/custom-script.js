@@ -18,6 +18,20 @@ $(document).ready(function(){
             });
     });
 
+  /*   link = window.location.href;
+     console.log(link);
+     $(".nav-menu li a").click(function(){
+      $(".nav-menu li a").removeClass('active');
+      console.log($(this).text())
+        if('http://tshibam-wp'== link && $(this).text() == "ACCUEIL"){
+          $(this).addClass('active');
+        }
+        else if('http://tshibam-wp/a-propos/' == link && $(this).text() == "a propos")
+        {
+          $(this).addClass('active'); 
+        }
+     })*/
+
     // slick jquery carousel logos
       $('.carousel').slick({
       slidesToShow: 7,
@@ -820,8 +834,6 @@ $(function(){
     "autoPlayTimeout": 100
     
   });
-
-
 
 });
 

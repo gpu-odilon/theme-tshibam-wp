@@ -29,7 +29,7 @@
 	<div id="tab-5" class="tab-content-info">
 		<div class="col-piece">
          <?php echo do_shortcode('[products limit= "6" columns= "3" orderby= "popularity" short_description="show" category="promo-info" class =" quick - sale " on_sale =" true " ]') ?>
-      </div>
+      	</div>
 	</div>
 
 	<div id="tab-6" class="tab-content-info">

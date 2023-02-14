@@ -66,18 +66,18 @@ Template name: piece roulant
 		</div>
 		<div class="row filter_show">
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="test"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="filtre_categorie_piece_et_materiel_roulant"]') ?>
 			</div>
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="form_test"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="sous_categorie_piece"]') ?>
 			</div>
 			<div class="col-md-4">
-				<?php echo do_shortcode('[searchandfilter id="attribut_select"]'); ?>
+				<?php echo do_shortcode(''); ?>
 			</div>
 		</div>
 	</div>
 	
-	<div class="col-piece" data-aos="fade-up" data-aos-duration="2000">
+	<div class="col-piece" data-aos="fade-up" data-aos-duration="1500">
         <?php echo do_shortcode('[products limit= "6" columns= "3" short_description="show" order="DESC" category="pieces" ]') ?> 
    </div>
 

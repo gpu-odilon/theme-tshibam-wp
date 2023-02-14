@@ -112,3 +112,8 @@ return wp_nav_menu( array( 'menu' => $name, 'menu_class' => $class, 'echo' => fa
 }
 
 add_shortcode('menu', 'print_menu_shortcode');
+
+add_shortcode('product_categories', 'woo_product_categories');
+
+
+
