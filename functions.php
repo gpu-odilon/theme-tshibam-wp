@@ -45,6 +45,8 @@ wp_enqueue_script('jquery-slick','https://code.jquery.com/jquery-3.6.1.js',array
 
 }
 
+
+
 add_action('wp_enqueue_scripts', 'charger_style_script');
 
 

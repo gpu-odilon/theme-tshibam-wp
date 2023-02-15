@@ -60,9 +60,9 @@ Template name: Product Informatique
 		</div>
 	</div>
 	
-		<div class="col-piece" data-aos="fade-up" data-aos-duration="3000">
+		<div class="col-piece" data-aos="fade-up" data-aos-duration="3000" data-aos-offset= "20">
            <?php echo do_shortcode('[products limit= "6" columns= "3" short_description="show" order="DESC" category="informatique" ]') ?> 
-      </div>
+      	</div>
 	
 	<!-- pagination product -->
 	<?php get_template_part( 'templates-parts/pagination/pagination-product' ); ?>

@@ -69,10 +69,10 @@ Template name: piece roulant
 				 <?php echo do_shortcode('[searchandfilter id="filtre_categorie_piece_et_materiel_roulant"]') ?>
 			</div>
 			<div class="col-md-4">
-				 <?php echo do_shortcode('[searchandfilter id="sous_categorie_piece"]') ?>
+				 <?php echo do_shortcode('[searchandfilter id="sous_categorie_piece_de_rechange_roulant"]') ?>
 			</div>
 			<div class="col-md-4">
-				<?php echo do_shortcode(''); ?>
+				<?php echo do_shortcode('[searchandfilter id="marque_produit_piece_de_rechange"]'); ?>
 			</div>
 		</div>
 	</div>

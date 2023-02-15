@@ -53,6 +53,9 @@
       </div>
    </div>
 </div>
+
+<?php get_template_part( 'templates-parts/fixed-sociaux/shares' ); ?>
+
 <div class="container product-top">
    <div class="row">
       <div class="col-md-3 col-sm-3 slik-int" data-aos="fade-up" data-aos-duration="1500">

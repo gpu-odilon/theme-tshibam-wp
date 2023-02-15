@@ -8,7 +8,7 @@
     <div class="container-fluid fluid-footer">
         <div class="container mobile-wrappper">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-lg-4 top-logo cls_foot_mobile" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-4 col-sm-4 col-lg-4 top-logo cls_foot_mobile" data-aos="fade-up" data-aos-duration="1500"  data-aos-offset= "20">
                     <a href="<?php echo site_url(); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-footer.png" alt="logo-footer" class="footer-logo">
                     </a>
@@ -25,7 +25,7 @@ mobilier de bureau et fourniture de bureau</p>
                    </a>
                     
                 </div>
-                <div class="col-md-4 col-sm-4 col-lg-4 footer-col cls_foot_mobile" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-4 col-sm-4 col-lg-4 footer-col cls_foot_mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-offset= "20">
                     <h3>Contact</h3>
                     <div class="number">
                         <span>034 05 815 11</span>
@@ -41,7 +41,7 @@ mobilier de bureau et fourniture de bureau</p>
                         <span>Enceinte Afriport B2</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-lg-4 footer-col cls_foot_mobile" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-4 col-sm-4 col-lg-4 footer-col cls_foot_mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-offset= "20">
                     <h3>Catégories</h3>
                     <div class="categorie">
                         <ul>

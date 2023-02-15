@@ -69,6 +69,7 @@ a:hover{
 }
 #myHeader{
     padding: 0!important;
+    z-index: 2;
 }
 .sticky {
   position: fixed;
@@ -190,6 +191,10 @@ a:hover{
 }
 #menu {
   display:none;
+}
+#menu .menu-principale-container{
+    height: 550px;
+    overflow-y: scroll;
 }
 #menu > ul {
   list-style-type: none;
@@ -432,7 +437,6 @@ a:hover{
     text-transform: uppercase;
     position: relative;
 }
-
 
 /*   +++ footer style custom  +++  */
 .footer-copyright{
@@ -1088,6 +1092,7 @@ ul.tabs-info li.current{
 .col-piece .descr_excerp{
     position: absolute;
     left: 50%;
+    padding-right: 10px;
 }
 
 .col-piece .woocommerce ul.products li.product a img:hover{
@@ -1146,6 +1151,7 @@ ul.tabs-info li.current{
     bottom: 30px;
 }
 .banner-2{
+    position: relative;
     width: 100%;
 }
 .clsbanner2{
@@ -1171,6 +1177,21 @@ position: absolute;
   top: 50%;
     left: 45%;
   transform: translate(-50%, -50%);
+}
+.sociaux-left{
+    position: fixed;
+    left: -2px;
+    z-index: 999;
+    background: #fff;
+}
+.fixed_icones{
+     transition: all .3s ease-in-out;
+}
+.fixed_icones:hover{
+    padding-left: 10px;
+}
+.sociaux-left li{
+    list-style: none;
 }
 .left-auth span{
     font-size: 29px;
